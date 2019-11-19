@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head><!DOCTYPE html>
+<head>
+    <title>Pet.find</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        #si{
+  font-family: 'Lobster', cursive;
+}
+    </style>
+   <!--  <link rel="stylesheet" href="main.css"> -->
+    <style>
+        @keyframes fade{
+            0%{
+                opacity:0;
+            }
+            100%{opacity: 1;}
+        }
+        #nbar,#sub{
+            background-color: #ee894e;
+        }
+        #sub{
+            border:1px solid #ee894e;
+        }
+        .nav-link,.navbar-brand{
+            color: white;
+        }
+        nav a:hover{
+            color:#8d3708;
+        }
+        #login{
+            float:right;
+        }
+        body {
+            background-color: #ee894e13;
+        }
+        a{
+            display: inline-flex;
+        }
+        footer {
+            background-color:#ee894e;
+            background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9));
+            margin-top:4%;
+            color: #838383;
+        }
+        footer a{
+            color: #838383;
+        }
+        footer a:hover{
+            text-decoration: none;
+            color: orange;
+        }
+        @keyframes fade{
+            0%{
+                opacity:0;
+            }
+            100%{opacity: 1;}
+        }
+        .heading{
+            margin-top: 7%;
+            margin-left: 42%;
+            color:#ee894e
+        }
+        .mainform{
+            border:2px solid #ee894e;
+            margin-top: 3%;
+            width:40%;
+            margin-left: 30%
+        }
+    </style>
+     <script>
+        $(document).ready(function(){
+             $("#nbar").hide();
+             // $("footer").hide();
+             $("#nbar").slideDown(600);
+             // $("div a").hide();
+             // $("div a").each(function(index){
+             //     $(this).delay(index*100).slideDown(1000);});
+             // $("footer").delay(1500).slideDown(2000);
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm justify-content-end fixed-top" id="nbar">
+        <a class="navbar-brand" href="/" id="si">Pet.find <i class="fa fa-paw"></i></a>
+
+        <a class="nav-item nav-link" href="#">About us</a>
+        <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="navbarSupportedContent">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/signup">Sign up</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <div class="main">
+            <h3 class="heading">Enter pet details</h3>
+            <form class="mainform">
+                <br>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div><br>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Gender">
+                </div><br>
+                <div class="col"><label>Vaccinated : </label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div></div><br>
+                <div class="col"><label>Neutered : </label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                  </div></div><br>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Temperament">
+                </div>
+                <br>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Breed">
+                </div><br>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Age">
+                </div>
+                <br>
+                <button class="btn btn-danger" style="margin-left:44%;background-color:#8d3708d2" type="button">Submit</button>
+                <br><br>
+            </form>
+            
+        </div>
+    </body>
+    </html>
